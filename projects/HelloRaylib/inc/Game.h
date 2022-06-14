@@ -1,4 +1,5 @@
 #pragma once
+#include <raylib.h>
 
 class Game
 {
@@ -21,4 +22,5 @@ public:
 
 protected:
 private:
+	Vector2 pos;
 };
