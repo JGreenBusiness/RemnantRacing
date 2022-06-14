@@ -38,8 +38,8 @@ var Module = typeof Module != 'undefined' ? Module : {};
         // web worker
         PACKAGE_PATH = encodeURIComponent(location.pathname.toString().substring(0, location.pathname.toString().lastIndexOf('/')) + '/');
       }
-      var PACKAGE_NAME = '../../../bin/Emscripten/Pong/Pong.data';
-      var REMOTE_PACKAGE_BASE = 'Pong.data';
+      var PACKAGE_NAME = '../../../bin/Emscripten/RemnantRacing/RemnantRacing.data';
+      var REMOTE_PACKAGE_BASE = 'RemnantRacing.data';
       if (typeof Module['locateFilePackage'] === 'function' && !Module['locateFile']) {
         Module['locateFile'] = Module['locateFilePackage'];
         err('warning: you defined Module.locateFilePackage, that has been renamed to Module.locateFile (using your locateFilePackage for now)');
@@ -172,10 +172,10 @@ Module['FS_createPath']("/", "assets", true, true);
           var files = metadata['files'];
           for (var i = 0; i < files.length; ++i) {
             DataRequest.prototype.requests[files[i].filename].onload();
-          }          Module['removeRunDependency']('datafile_../../../bin/Emscripten/Pong/Pong.data');
+          }          Module['removeRunDependency']('datafile_../../../bin/Emscripten/RemnantRacing/RemnantRacing.data');
 
       };
-      Module['addRunDependency']('datafile_../../../bin/Emscripten/Pong/Pong.data');
+      Module['addRunDependency']('datafile_../../../bin/Emscripten/RemnantRacing/RemnantRacing.data');
 
       if (!Module.preloadResults) Module.preloadResults = {};
 
@@ -196,7 +196,7 @@ Module['FS_createPath']("/", "assets", true, true);
     }
 
     }
-    loadPackage({"files": [{"filename": "/assets/.gitkeep", "start": 0, "end": 0}], "remote_package_size": 0, "package_uuid": "88bebd9c-b608-4d7a-9853-93dfc2f86e23"});
+    loadPackage({"files": [{"filename": "/assets/.gitkeep", "start": 0, "end": 0}], "remote_package_size": 0, "package_uuid": "8422c0dc-2145-4141-b69b-a1ca5383a6a8"});
 
   })();
 
@@ -1705,7 +1705,7 @@ function createExportWrapper(name, fixedasm) {
 }
 
 var wasmBinaryFile;
-  wasmBinaryFile = 'Pong.wasm';
+  wasmBinaryFile = 'RemnantRacing.wasm';
   if (!isDataURI(wasmBinaryFile)) {
     wasmBinaryFile = locateFile(wasmBinaryFile);
   }
