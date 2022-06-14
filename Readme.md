@@ -11,7 +11,6 @@ Raylib libraries are Pre-Compiled for:
 For more information about raylib:
 https://www.raylib.com
 
-
 ## Creating a new Project
 1. Duplicate the `HelloRaylib` from the `projects` folder
 2. Rename the folder to match your project name
